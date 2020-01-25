@@ -131,7 +131,8 @@ run_basicExample() {
   sleep 5
   cp $ROOT/nuve/nuveClient/dist/nuve.js $EXTRAS/basic_example/
   cd $EXTRAS/basic_example
-  node basicServer.js &
+  npm install &
+  npm start &
 }
 
 parse_arguments $*

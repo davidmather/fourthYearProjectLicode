@@ -1,4 +1,4 @@
-/* global require, describe, it, beforeEach, afterEach, before, after */
+/* global require, describe, it, beforeEach, afterEach */
 
 /* eslint-disable no-unused-expressions, global-require */
 
@@ -20,19 +20,7 @@ describe('Erizo Controller / Erizo Controller', () => {
   let signatureMock;
   let controller;
   let rpcPublic;
-  let processArgsBackup;
-
   const arbitraryErizoControllerId = 'ErizoControllerId';
-
-  // Allows passing arguments to mocha
-  before(() => {
-    processArgsBackup = [...process.argv];
-    process.argv = [];
-  });
-
-  after(() => {
-    process.argv = [...processArgsBackup];
-  });
 
   beforeEach(() => {
     global.config = { logger: { configFile: true } };

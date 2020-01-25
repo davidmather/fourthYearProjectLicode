@@ -66,11 +66,11 @@ config.erizoController.networkinterface = ''; //default value: ''
 config.erizoController.hostname = ''; //default value: ''
 config.erizoController.port = 8080; //default value: 8080
 // Use true if clients communicate with erizoController over SSL
-config.erizoController.ssl = false; //default value: false
+config.erizoController.ssl = true; //default value: false
 
 // This configuration is used by erizoController server to listen for connections
 // Use true if erizoController listens in HTTPS.
-config.erizoController.listen_ssl = false; //default value: false
+config.erizoController.listen_ssl = true; //default value: false
 config.erizoController.listen_port = 8080; //default value: 8080
 
 // Custom location for SSL certificates. Default located in /cert
@@ -79,7 +79,7 @@ config.erizoController.listen_port = 8080; //default value: 8080
 //config.erizoController.sslCaCerts = ['/full/path/to/ca_cert1.crt', '/full/path/to/ca_cert2.crt'];
 
 // Use the name of the inferface you want to bind to for websockets
-// config.erizoController.networkInterface = 'eth1' // default value: undefined
+config.erizoController.networkInterface = 'eth1' // default value: undefined
 
 config.erizoController.exitOnNuveCheckFail = false;  // default value: false
 config.erizoController.allowSinglePC = false;  // default value: false

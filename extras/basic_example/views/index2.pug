@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  // h1= title
+  // p Welcome to #{title}
+  // iframe(src="https://codepen.io/davidmather/pen/ExYGaVy")
+  div(id="megacontainer")
+      div(id="chatbutton") chatbutton
+      div(id="videocontainer" style="display:none")
+          div(id="buttoncontainer")
+              button(id="videocall")
+                  i(class="fa fa-video-camera" title="start a videocall")
+              button(id="audiocall" title="start an audiocall")
+                  i(class="fa fa-phone")
+              button(id="close")
+                  i(class="fa fa-close")
+          div
+              div(id="messages")
+              form(action="")
+                  input(id="m" autocomplete="off" placeholder="type a message")
+                  div(id="chatMessageButtonContainer")
+                   button
+                      i(class="fas fa-image" title="start a videocall")
+      div(id="videos" class="videosInvisible")
+          div(id="videosbuttoncontainer")
+              button(id="back")
+                  i(class='far fa-arrow-alt-circle-left')
+  script(src="/socket.io/socket.io.js")
+  script(src="https://webrtc.github.io/adapter/adapter-latest.js")
+  script(src="https://code.jquery.com/jquery-1.11.1.js")
+  script(src="javascripts/videocall.js")

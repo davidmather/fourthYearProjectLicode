@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  // h1= title
+  //p Welcome to #{title}
+  iframe(src="https://codeshare.io/aJqE4X" style="width:100%;height:100%;")
+  div(id="videos")
+   video(id="localVideo" autoplay muted playsinline)
+   video(id="remoteVideo" autoplay playsinline)
+  script(src="/socket.io/socket.io.js")
+  script(src="https://webrtc.github.io/adapter/adapter-latest.js")
+  script(src="javascripts/videocall.js")
